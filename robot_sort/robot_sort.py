@@ -107,6 +107,7 @@ class SortingRobot:
             self.swap_item()
             # Move left
             self.move_left()
+            self.set_light_on()
             # Check to see if we can go farther left
             while self.compare_item() == -1 and self.can_move_left():
                 # Move left
